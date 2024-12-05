@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans relative">
+
+    <!-- Header Section -->
+    <header class="bg-teal-600 text-white py-6">
+        <h1 class="text-center text-4xl font-bold">PYTHON PROJECTS</h1>
+    </header>
+
+    <!-- Projects Grid -->
+    <main class="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+            <img src="./Museum.png" alt="The project" class="w-full">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-teal-600 text-lg font-semibold">ArtDive</h2>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <p class="text-gray-600">A dataset exploration project using Carnegie Museum of Art&rsquo;s collection.</p>
+            </div>
+
+            <!-- Popup Section -->
+            <div class="hidden absolute top-10 right-4 bg-white border border-gray-300 rounded-lg shadow-lg w-72 z-50 p-4">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-teal-600 text-md font-semibold">Details</h3>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <p class="text-gray-800 text-sm mb-2"><strong>Skills:</strong> File Handling, Data Structuring, Parsing and Managing Data</p>
+                <ul class="list-disc ml-5 text-sm text-gray-700">
+                    <li>Data Loading: Parses artwork and artist data from a CSV file.</li>
+                    <li>Interactive Guide: User-friendly interface to explore artworks.</li>
+                    <li>Artwork Information: Displays details such as creation date, medium, dimensions, physical location, and images.</li>
+                    <li>User Engagement: Allows users to ask questions about selected artworks.
+                    </li>
+                </ul>
+                <a href="https://github.com/renjx0425/ArtworkGuide.git" target="_blank" class="flex items-center justify-center mt-4 text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-md">
+                    <i class="fab fa-github mr-2"></i> View Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+            <img src="./Gym.jpg" alt="The project" class="w-full">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-teal-600 text-lg font-semibold">GymBuddy Insights</h2>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <p class="text-gray-600">A data analysis project focused on uncovering patterns and trends within gym usage data.</p>
+            </div>
+
+            <!-- Popup Section -->
+            <div class="hidden absolute top-10 right-4 bg-white border border-gray-300 rounded-lg shadow-lg w-72 z-50 p-4">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-teal-600 text-md font-semibold">Details</h3>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <p class="text-gray-800 text-sm mb-2"><strong>Skills:</strong> Data Analysis, Data Visualization, Jupyter Notebook</p>
+                <ul class="list-disc ml-5 text-sm text-gray-700">
+                    <li>Attendance Tracking: Identify peak hours, popular days, and underutilized time slots.</li>
+                    <li>User Behavior Insights: Examine user activity patterns (session frequency, duration) to understand member habits.</li>
+                    <li>Membership Analysis: Detect retention trends and identify potential churn risks.</li>
+                    <li>Data Visualization: Use Matplotlib to highlight key insights.</li>
+                </ul>
+                <a href="https://github.com/renjx0425/GymDataAnalysis" target="_blank" class="flex items-center justify-center mt-4 text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-md">
+                    <i class="fab fa-github mr-2"></i> View Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+            <img src="./Frida.jpg" alt="The project" class="w-full">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-teal-600 text-lg font-semibold">FridaBot</h2>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <p class="text-gray-600">A text-based chatbot designed to emulate the introspective, poetic style of Frida Kahlo by leveraging OpenAI&rsquo;s API</p>
+            </div>
+
+            <!-- Popup Section -->
+            <div class="hidden absolute top-10 right-4 bg-white border border-gray-300 rounded-lg shadow-lg w-72 z-50 p-4">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-teal-600 text-md font-semibold">Details</h3>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <p class="text-gray-800 text-sm mb-2"><strong>Skills:</strong> Natural Language Processing, API Integration, Prompt Engineering</p>
+                <ul class="list-disc ml-5 text-sm text-gray-700">
+                    <li>Personality Emulation: Generates responses reflecting Frida&rsquo;s introspective and poetic nature.</li>
+                    <li>OpenAI Integration: Leverages advanced NLP for authentic dialogue creation.</li>
+                    <li>Dynamic Conversations: Allows users to explore topics ranging from art to life philosophy in Frida&rsquo;s voice.</li>
+                    <li>Future Text-To-Speech Capability: In-progress feature to provide an auditory experience for users.</li>
+                </ul>
+                <a href="https://github.com/renjx0425/Frida-Kahlo-Chatbot.git" target="_blank" class="flex items-center justify-center mt-4 text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-md">
+                    <i class="fab fa-github mr-2"></i> View Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+            <img src="./REST API.png" alt="The project" class="w-full">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-teal-600 text-lg font-semibold">REST API Bite-Sized Guide</h2>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <p class="text-gray-600">A condensed and user-friendly version of an hour-long REST API tutorial video.</p>
+            </div>
+
+            <!-- Popup Section -->
+            <div class="hidden absolute top-10 right-4 bg-white border border-gray-300 rounded-lg shadow-lg w-72 z-50 p-4">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-teal-600 text-md font-semibold">Details</h3>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <p class="text-gray-800 text-sm mb-2"><strong>Skills:</strong> Web Development, YouTube API, Problem-Solving</p>
+                <ul class="list-disc ml-5 text-sm text-gray-700">
+                    <li>Segmented Learning: Splits a long tutorial into two digestible 10-minute segments.</li>
+                    <li>Auto Start and Pause: Implements precise start and stop points for seamless navigation.</li>
+                    <li>Ease of Access: Hosted on a dedicated webpage for quick and organized access.</li>
+                    <li>Enhanced User Experience: Reduces cognitive load with chunked content delivery.</li>
+                </ul>
+                <a href="https://renjx0425.github.io/RESTAPI/" target="_blank" class="flex items-center justify-center mt-4 text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-md">
+                    <i class="fab fa-github mr-2"></i> View Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+            <img src="./Keywords.png" alt="The project" class="w-full">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-teal-600 text-lg font-semibold">FridaBot: Keyword Explorer</h2>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <p class="text-gray-600">A project with keyword extraction and name spotting to identify user interests and enhance conversational relevance.</p>
+            </div>
+
+            <!-- Popup Section -->
+            <div class="hidden absolute top-10 right-4 bg-white border border-gray-300 rounded-lg shadow-lg w-72 z-50 p-4">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-teal-600 text-md font-semibold">Details</h3>
+                    <button class="text-gray-600 text-lg focus:outline-none" onclick="togglePopup(this)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <p class="text-gray-800 text-sm mb-2"><strong>Skills:</strong> NLP(spaCy), Google Colab, Data Visualization</p>
+                <ul class="list-disc ml-5 text-sm text-gray-700">
+                    <li>Keyword Extraction: Detects key terms and phrases from user input to analyze interests.</li>
+                    <li>Name Recognition: Identifies names like "Frida" or other relevant entities within user conversations.</li>
+                    <li>Interactive Experimentation: Tests functionality with custom-made example questions.</li>
+                    <li>Foundation for Insights: Lays groundwork for understanding user engagement and improving interaction.</li>
+                </ul>
+                <a href="https://colab.research.google.com/drive/11OhO6ExipgsvbWjJgpnowaHIgQL-pfY_?usp=sharing" target="_blank" class="flex items-center justify-center mt-4 text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-md">
+                    <i class="fab fa-github mr-2"></i> View Code
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-6 bg-gray-200 text-gray-600">
+        &copy; 2024 Projects Showcase. All rights reserved.
+    </footer>
+
+    <script>
+        // Toggle the visibility of the popup
+        function togglePopup(button) {
+            const popup = button.closest('.relative').querySelector('.hidden') || button.closest('.relative').querySelector('.absolute');
+            popup.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
